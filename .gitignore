@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+models/*.pkl
+.streamlit/secrets.toml
+gcp-key.json
