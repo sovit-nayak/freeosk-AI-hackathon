@@ -117,7 +117,7 @@ for kiosk in KIOSKS:
             restock_cycle = np.random.choice([8, 9])
             restock_qty = np.random.randint(250, 320) if (day_num % restock_cycle == 0) else 0
         else:
-            restock_qty = np.random.randint(450, 650) if (day_num % restock_cycle == 0) else 0    
+            restock_qty = np.random.randint(150, 300) if (day_num % restock_cycle == 0) else 0   
 
         all_rows.append({
             "kiosk_id": kid, "location_name": kiosk["location_name"],
@@ -137,7 +137,7 @@ df = df.sort_values(["kiosk_id", "date"]).reset_index(drop=True)
 
 inv_records = []
 for kid, group in df.groupby("kiosk_id"):
-    inv = 500
+    inv = 300
     for idx, row in group.iterrows():
         inv += row["restock_qty"]
         dispensed = min(row["samples_dispensed"], max(0, inv))
