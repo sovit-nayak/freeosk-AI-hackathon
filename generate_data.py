@@ -117,8 +117,8 @@ for kiosk in KIOSKS:
             restock_cycle = np.random.choice([9, 10])
             restock_qty = np.random.randint(180, 240) if (day_num % restock_cycle == 0) else 0
         else:
-            # Healthy kiosks - restock often with enough to stay above 150
-            restock_qty = np.random.randint(250, 300) if (day_num % restock_cycle == 0) else 0
+            # Healthy kiosks - restock enough to never deplete
+            restock_qty = np.random.randint(400, 500) if (day_num % restock_cycle == 0) else 0
 
         all_rows.append({
             "kiosk_id": kid, "location_name": kiosk["location_name"],
