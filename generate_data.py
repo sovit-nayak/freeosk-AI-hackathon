@@ -107,17 +107,18 @@ for kiosk in KIOSKS:
         samples_dispensed = max(0, int(base + np.random.normal(0, 5)))
         day_num = (dt - pd.Timestamp(START_DATE)).days
         restock_cycle = np.random.choice([5, 6, 7])
-        if kid == "26354":  # Newark - warning, depletes ~10 days out
+        if kid == "26354":  # Newark - critical, depletes ~April 20
             restock_cycle = np.random.choice([7, 8])
-            restock_qty = np.random.randint(280, 340) if (day_num % restock_cycle == 0) else 0
-        elif kid == "26358":  # Hoboken - already depleted
-            restock_cycle = np.random.choice([8, 9])
-            restock_qty = np.random.randint(250, 320) if (day_num % restock_cycle == 0) else 0
-        elif kid == "26363":  # Clifton - already depleted
-            restock_cycle = np.random.choice([8, 9])
-            restock_qty = np.random.randint(250, 320) if (day_num % restock_cycle == 0) else 0
+            restock_qty = np.random.randint(220, 280) if (day_num % restock_cycle == 0) else 0
+        elif kid == "26358":  # Hoboken - warning, depletes ~April 27
+            restock_cycle = np.random.choice([6, 7])
+            restock_qty = np.random.randint(240, 300) if (day_num % restock_cycle == 0) else 0
+        elif kid == "26363":  # Clifton - depleted already
+            restock_cycle = np.random.choice([9, 10])
+            restock_qty = np.random.randint(180, 240) if (day_num % restock_cycle == 0) else 0
         else:
-            restock_qty = np.random.randint(150, 300) if (day_num % restock_cycle == 0) else 0   
+            # Healthy kiosks - restock often with enough to stay above 150
+            restock_qty = np.random.randint(250, 300) if (day_num % restock_cycle == 0) else 0
 
         all_rows.append({
             "kiosk_id": kid, "location_name": kiosk["location_name"],

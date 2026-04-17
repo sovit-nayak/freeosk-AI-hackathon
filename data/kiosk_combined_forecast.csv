@@ -1,172 +1,206 @@
 kiosk_id,location_name,date,samples_dispensed,yhat_demand,inventory_on_hand,prophet_demand,prophet_lower,prophet_upper
-26354,Newark - Walmart,2026-03-28,100,85,90,34,0,69
-26354,Newark - Walmart,2026-03-29,90,44,0,25,0,61
-26354,Newark - Walmart,2026-03-30,0,23,0,15,0,50
-26354,Newark - Walmart,2026-03-31,0,0,0,30,0,67
-26354,Newark - Walmart,2026-04-01,0,0,0,48,13,82
-26354,Newark - Walmart,2026-04-02,0,2,0,42,2,78
-26354,Newark - Walmart,2026-04-03,0,0,0,33,0,70
-26354,Newark - Walmart,2026-04-04,0,0,0,39,4,78
-26354,Newark - Walmart,2026-04-05,0,0,0,35,1,72
-26354,Newark - Walmart,2026-04-13,0,0,0,40,9,76
-26354,Newark - Walmart,2026-04-14,80,65,204,49,14,84
-26354,Newark - Walmart,2026-04-15,71,66,133,43,5,79
-26354,Newark - Walmart,2026-04-16,74,69,59,51,15,88
-26355,Edison - ShopRite,2026-03-18,0,1,0,44,5,82
-26355,Edison - ShopRite,2026-03-19,0,0,0,49,10,89
-26355,Edison - ShopRite,2026-03-20,60,60,122,35,0,75
-26355,Edison - ShopRite,2026-03-21,103,73,19,36,0,78
-26355,Edison - ShopRite,2026-03-22,19,31,0,38,0,78
-26355,Edison - ShopRite,2026-03-27,60,56,20,35,0,74
-26355,Edison - ShopRite,2026-03-28,20,10,0,40,3,78
-26355,Edison - ShopRite,2026-03-29,0,5,0,46,5,86
-26355,Edison - ShopRite,2026-03-31,58,64,155,29,0,68
-26355,Edison - ShopRite,2026-04-01,49,52,106,32,0,69
-26355,Edison - ShopRite,2026-04-02,63,60,43,38,0,75
-26355,Edison - ShopRite,2026-04-03,43,24,0,31,0,71
-26355,Edison - ShopRite,2026-04-04,0,16,0,30,0,71
-26355,Edison - ShopRite,2026-04-07,54,63,143,35,0,71
-26355,Edison - ShopRite,2026-04-08,65,58,78,45,9,85
-26355,Edison - ShopRite,2026-04-09,49,64,29,43,2,84
-26355,Edison - ShopRite,2026-04-10,29,21,0,42,2,83
-26355,Edison - ShopRite,2026-04-14,0,0,0,37,0,77
-26355,Edison - ShopRite,2026-04-15,0,0,0,53,15,93
-26355,Edison - ShopRite,2026-04-16,0,0,0,46,7,88
-26356,Parsippany - Stop & Shop,2026-03-20,62,63,397,0,0,29
-26356,Parsippany - Stop & Shop,2026-03-21,54,75,343,0,0,26
-26356,Parsippany - Stop & Shop,2026-03-22,58,69,285,0,0,30
-26356,Parsippany - Stop & Shop,2026-03-23,54,45,231,0,0,11
-26356,Parsippany - Stop & Shop,2026-03-24,99,84,132,0,0,25
-26356,Parsippany - Stop & Shop,2026-03-25,51,54,280,0,0,13
-26356,Parsippany - Stop & Shop,2026-03-26,51,58,229,0,0,13
-26356,Parsippany - Stop & Shop,2026-03-27,35,54,194,0,0,14
-26356,Parsippany - Stop & Shop,2026-03-28,77,73,117,0,0,14
-26356,Parsippany - Stop & Shop,2026-03-29,74,78,43,0,0,15
-26356,Parsippany - Stop & Shop,2026-03-30,43,16,0,0,0,6
-26356,Parsippany - Stop & Shop,2026-03-31,66,58,92,0,0,3
-26356,Parsippany - Stop & Shop,2026-04-01,79,58,13,0,0,10
-26356,Parsippany - Stop & Shop,2026-04-02,13,25,0,0,0,20
-26356,Parsippany - Stop & Shop,2026-04-03,0,0,0,0,0,26
-26356,Parsippany - Stop & Shop,2026-04-04,0,1,0,7,0,45
-26356,Parsippany - Stop & Shop,2026-04-05,0,0,0,0,0,34
-26356,Parsippany - Stop & Shop,2026-04-06,0,0,0,0,0,34
-26356,Parsippany - Stop & Shop,2026-04-07,0,0,0,5,0,40
-26356,Parsippany - Stop & Shop,2026-04-08,0,0,0,13,0,47
-26356,Parsippany - Stop & Shop,2026-04-09,0,0,0,25,0,63
-26357,Cherry Hill - Target,2026-03-24,41,55,53,50,12,89
-26357,Cherry Hill - Target,2026-03-25,53,23,0,52,14,93
-26357,Cherry Hill - Target,2026-03-26,0,14,0,65,30,104
-26357,Cherry Hill - Target,2026-03-27,0,3,0,53,17,92
-26357,Cherry Hill - Target,2026-03-28,0,1,0,48,9,85
-26357,Cherry Hill - Target,2026-03-29,0,0,0,55,16,95
-26357,Cherry Hill - Target,2026-03-30,0,0,0,61,24,97
-26357,Cherry Hill - Target,2026-03-31,0,0,0,92,55,131
-26357,Cherry Hill - Target,2026-04-01,0,0,0,87,49,127
-26357,Cherry Hill - Target,2026-04-13,73,57,36,87,51,122
-26357,Cherry Hill - Target,2026-04-14,36,26,0,105,70,146
-26357,Cherry Hill - Target,2026-04-15,0,3,0,100,63,137
-26357,Cherry Hill - Target,2026-04-16,0,0,0,109,72,147
-26358,Hoboken - Whole Foods,2026-03-20,70,62,119,19,0,60
-26358,Hoboken - Whole Foods,2026-03-21,80,100,39,51,11,96
-26358,Hoboken - Whole Foods,2026-03-22,39,21,0,30,0,74
-26358,Hoboken - Whole Foods,2026-03-23,0,14,0,27,0,69
-26358,Hoboken - Whole Foods,2026-03-24,0,1,0,13,0,58
-26358,Hoboken - Whole Foods,2026-03-25,0,1,0,13,0,55
-26358,Hoboken - Whole Foods,2026-03-26,0,0,0,13,0,54
-26358,Hoboken - Whole Foods,2026-03-27,0,0,0,22,0,65
-26358,Hoboken - Whole Foods,2026-03-28,0,0,0,26,0,67
-26358,Hoboken - Whole Foods,2026-03-29,75,83,229,17,0,56
-26358,Hoboken - Whole Foods,2026-04-05,0,0,0,19,0,64
-26358,Hoboken - Whole Foods,2026-04-06,55,60,222,3,0,44
-26358,Hoboken - Whole Foods,2026-04-07,44,52,178,12,0,56
-26358,Hoboken - Whole Foods,2026-04-08,72,75,106,24,0,67
-26358,Hoboken - Whole Foods,2026-04-09,59,60,47,13,0,53
-26358,Hoboken - Whole Foods,2026-04-10,47,34,0,23,0,63
-26358,Hoboken - Whole Foods,2026-04-13,61,55,173,8,0,51
-26358,Hoboken - Whole Foods,2026-04-14,65,74,386,11,0,50
-26358,Hoboken - Whole Foods,2026-04-15,85,69,301,14,0,52
-26358,Hoboken - Whole Foods,2026-04-16,62,64,239,12,0,51
-26359,Trenton - Costco,2026-03-18,51,65,88,63,23,104
-26359,Trenton - Costco,2026-03-19,49,64,39,56,17,96
-26359,Trenton - Costco,2026-03-20,82,90,214,64,21,105
-26359,Trenton - Costco,2026-03-21,82,83,132,46,7,85
-26359,Trenton - Costco,2026-03-22,93,86,39,55,14,94
-26359,Trenton - Costco,2026-03-23,39,33,0,50,11,89
-26359,Trenton - Costco,2026-03-24,43,57,136,55,16,95
-26359,Trenton - Costco,2026-03-25,54,61,82,55,16,93
-26359,Trenton - Costco,2026-03-26,57,85,25,60,23,98
-26359,Trenton - Costco,2026-03-27,25,32,0,36,0,72
-26359,Trenton - Costco,2026-03-28,0,0,0,42,4,81
-26359,Trenton - Costco,2026-03-29,0,0,0,49,10,88
-26359,Trenton - Costco,2026-03-30,0,0,0,30,0,69
-26359,Trenton - Costco,2026-03-31,0,0,0,23,0,62
-26359,Trenton - Costco,2026-04-01,0,0,0,24,0,63
-26359,Trenton - Costco,2026-04-02,0,0,0,26,0,65
-26359,Trenton - Costco,2026-04-03,0,0,0,31,0,72
-26359,Trenton - Costco,2026-04-11,90,76,2,0,0,31
-26359,Trenton - Costco,2026-04-12,2,30,0,4,0,42
-26359,Trenton - Costco,2026-04-13,0,0,0,0,0,30
-26359,Trenton - Costco,2026-04-14,0,0,0,0,0,26
-26359,Trenton - Costco,2026-04-15,0,0,0,11,0,50
-26359,Trenton - Costco,2026-04-16,0,0,0,0,0,27
-26360,Princeton - Wegmans,2026-03-18,46,57,101,21,0,61
-26360,Princeton - Wegmans,2026-03-19,74,56,296,16,0,55
-26360,Princeton - Wegmans,2026-03-20,45,58,501,12,0,52
-26360,Princeton - Wegmans,2026-03-24,60,60,200,21,0,60
-26360,Princeton - Wegmans,2026-03-25,46,80,154,36,0,78
-26360,Princeton - Wegmans,2026-03-26,48,62,106,10,0,52
-26360,Princeton - Wegmans,2026-03-27,64,85,42,33,0,73
-26360,Princeton - Wegmans,2026-03-28,42,27,0,29,0,71
-26360,Princeton - Wegmans,2026-03-29,0,25,0,29,0,72
-26360,Princeton - Wegmans,2026-03-30,0,0,0,20,0,62
-26360,Princeton - Wegmans,2026-03-31,57,61,212,31,0,72
-26360,Princeton - Wegmans,2026-04-01,71,74,141,47,5,90
-26360,Princeton - Wegmans,2026-04-02,47,60,94,28,0,70
-26360,Princeton - Wegmans,2026-04-03,62,61,32,32,0,71
-26360,Princeton - Wegmans,2026-04-04,32,24,0,45,6,88
-26360,Princeton - Wegmans,2026-04-07,61,57,377,54,16,95
-26360,Princeton - Wegmans,2026-04-08,54,60,323,51,11,90
-26360,Princeton - Wegmans,2026-04-09,69,58,411,49,7,89
-26360,Princeton - Wegmans,2026-04-10,44,58,367,48,8,89
-26360,Princeton - Wegmans,2026-04-11,97,63,270,59,19,100
-26360,Princeton - Wegmans,2026-04-13,49,68,281,51,8,93
-26360,Princeton - Wegmans,2026-04-14,74,63,207,59,13,96
-26360,Princeton - Wegmans,2026-04-15,67,66,140,53,12,94
-26360,Princeton - Wegmans,2026-04-16,68,69,72,46,6,85
-26361,Morristown - Acme,2026-04-06,75,61,214,40,2,76
-26361,Morristown - Acme,2026-04-07,105,87,109,74,35,109
-26361,Morristown - Acme,2026-04-08,42,60,67,63,28,100
-26361,Morristown - Acme,2026-04-09,58,62,245,65,28,101
-26361,Morristown - Acme,2026-04-10,42,53,203,64,28,99
-26361,Morristown - Acme,2026-04-11,60,74,143,67,33,103
-26361,Morristown - Acme,2026-04-12,96,78,200,64,31,100
-26361,Morristown - Acme,2026-04-13,72,61,128,54,20,90
-26361,Morristown - Acme,2026-04-14,55,53,358,72,38,109
-26361,Morristown - Acme,2026-04-15,67,62,291,77,41,110
-26361,Morristown - Acme,2026-04-16,45,64,246,79,43,115
-26362,Atlantic City - BJs,2026-03-18,42,59,238,40,6,75
-26362,Atlantic City - BJs,2026-03-19,68,60,170,32,0,68
-26362,Atlantic City - BJs,2026-03-20,66,60,280,32,1,71
-26362,Atlantic City - BJs,2026-03-22,90,76,108,33,0,69
-26362,Atlantic City - BJs,2026-03-23,31,61,77,27,0,62
-26362,Atlantic City - BJs,2026-03-24,77,22,0,57,23,90
-26362,Atlantic City - BJs,2026-03-25,81,89,167,55,21,89
-26362,Atlantic City - BJs,2026-03-26,44,52,123,31,0,65
-26362,Atlantic City - BJs,2026-03-27,48,57,75,31,0,66
-26362,Atlantic City - BJs,2026-03-28,75,41,0,35,2,68
-26362,Atlantic City - BJs,2026-03-29,0,29,0,30,0,64
-26362,Atlantic City - BJs,2026-03-30,0,0,0,23,0,57
-26362,Atlantic City - BJs,2026-03-31,0,0,0,37,0,70
-26362,Atlantic City - BJs,2026-04-01,0,1,0,51,17,86
-26362,Atlantic City - BJs,2026-04-02,0,1,0,24,0,57
-26362,Atlantic City - BJs,2026-04-03,0,0,0,22,0,57
-26362,Atlantic City - BJs,2026-04-04,0,0,0,27,0,63
-26362,Atlantic City - BJs,2026-04-14,0,0,0,24,0,58
-26362,Atlantic City - BJs,2026-04-15,0,0,0,2,0,36
-26362,Atlantic City - BJs,2026-04-16,0,0,0,0,0,29
-26363,Clifton - Sam's Club,2026-03-18,0,0,0,23,0,59
-26363,Clifton - Sam's Club,2026-04-01,0,0,0,21,0,58
-26363,Clifton - Sam's Club,2026-04-02,0,0,0,29,0,67
-26363,Clifton - Sam's Club,2026-04-03,0,0,0,40,5,78
-26363,Clifton - Sam's Club,2026-04-04,0,0,0,43,7,81
-26363,Clifton - Sam's Club,2026-04-05,0,0,0,56,15,94
+26354,Newark - Walmart,2026-03-28,70,56,0,22,0,60
+26354,Newark - Walmart,2026-03-29,0,35,0,23,0,60
+26354,Newark - Walmart,2026-03-30,0,0,0,1,0,38
+26354,Newark - Walmart,2026-03-31,0,1,0,27,0,67
+26354,Newark - Walmart,2026-04-01,0,0,0,40,2,80
+26354,Newark - Walmart,2026-04-02,0,0,0,35,0,73
+26354,Newark - Walmart,2026-04-03,0,0,0,26,0,61
+26354,Newark - Walmart,2026-04-04,0,0,0,31,0,67
+26354,Newark - Walmart,2026-04-13,0,0,0,15,0,50
+26354,Newark - Walmart,2026-04-14,80,73,144,37,0,75
+26354,Newark - Walmart,2026-04-15,71,61,73,38,0,74
+26354,Newark - Walmart,2026-04-16,73,38,0,39,3,78
+26355,Edison - ShopRite,2026-03-18,0,10,0,73,31,107
+26355,Edison - ShopRite,2026-03-19,0,0,0,72,37,110
+26355,Edison - ShopRite,2026-03-20,0,1,0,75,35,110
+26355,Edison - ShopRite,2026-03-21,0,1,0,80,43,115
+26355,Edison - ShopRite,2026-03-22,0,1,0,69,33,104
+26355,Edison - ShopRite,2026-03-23,0,1,0,63,25,101
+26355,Edison - ShopRite,2026-03-24,0,0,0,78,41,115
+26355,Edison - ShopRite,2026-04-01,0,1,0,69,31,107
+26355,Edison - ShopRite,2026-04-02,0,0,0,72,39,109
+26355,Edison - ShopRite,2026-04-03,0,0,0,66,28,102
+26355,Edison - ShopRite,2026-04-04,77,84,187,73,39,111
+26355,Edison - ShopRite,2026-04-11,77,103,234,85,51,126
+26355,Edison - ShopRite,2026-04-12,88,77,146,60,23,98
+26355,Edison - ShopRite,2026-04-13,38,54,108,44,10,84
+26355,Edison - ShopRite,2026-04-14,71,66,310,53,16,90
+26355,Edison - ShopRite,2026-04-15,61,91,249,58,21,93
+26355,Edison - ShopRite,2026-04-16,85,69,164,54,18,91
+26356,Parsippany - Stop & Shop,2026-03-18,60,64,13,29,0,66
+26356,Parsippany - Stop & Shop,2026-03-19,13,31,0,38,4,72
+26356,Parsippany - Stop & Shop,2026-03-20,43,48,227,30,0,65
+26356,Parsippany - Stop & Shop,2026-03-21,92,97,135,70,33,106
+26356,Parsippany - Stop & Shop,2026-03-22,85,69,50,38,4,76
+26356,Parsippany - Stop & Shop,2026-03-23,37,59,13,12,0,49
+26356,Parsippany - Stop & Shop,2026-03-24,13,14,0,50,17,84
+26356,Parsippany - Stop & Shop,2026-03-25,0,0,0,17,0,53
+26356,Parsippany - Stop & Shop,2026-03-26,0,0,0,28,0,64
+26356,Parsippany - Stop & Shop,2026-03-27,0,3,0,42,7,80
+26356,Parsippany - Stop & Shop,2026-03-28,0,1,0,22,0,58
+26356,Parsippany - Stop & Shop,2026-03-29,0,0,0,22,0,56
+26356,Parsippany - Stop & Shop,2026-03-30,0,0,0,5,0,40
+26356,Parsippany - Stop & Shop,2026-03-31,77,73,218,19,0,55
+26356,Parsippany - Stop & Shop,2026-04-07,0,0,0,32,0,68
+26356,Parsippany - Stop & Shop,2026-04-08,0,0,0,29,0,62
+26356,Parsippany - Stop & Shop,2026-04-09,0,1,0,43,7,81
+26356,Parsippany - Stop & Shop,2026-04-10,0,1,0,70,33,104
+26356,Parsippany - Stop & Shop,2026-04-11,0,0,0,59,24,93
+26357,Cherry Hill - Target,2026-03-18,61,60,13,63,24,102
+26357,Cherry Hill - Target,2026-03-19,13,34,0,68,33,106
+26357,Cherry Hill - Target,2026-03-20,58,58,213,56,16,93
+26357,Cherry Hill - Target,2026-03-21,100,92,113,73,33,111
+26357,Cherry Hill - Target,2026-03-22,50,74,63,52,15,91
+26357,Cherry Hill - Target,2026-03-23,63,20,0,39,3,75
+26357,Cherry Hill - Target,2026-03-24,0,11,0,43,7,80
+26357,Cherry Hill - Target,2026-03-25,0,0,0,44,9,85
+26357,Cherry Hill - Target,2026-03-26,0,0,0,41,2,78
+26357,Cherry Hill - Target,2026-03-27,0,0,0,41,4,78
+26357,Cherry Hill - Target,2026-03-28,0,0,0,46,10,84
+26357,Cherry Hill - Target,2026-03-29,0,0,0,37,0,75
+26357,Cherry Hill - Target,2026-03-30,47,48,230,28,0,65
+26357,Cherry Hill - Target,2026-04-06,67,61,357,33,0,69
+26357,Cherry Hill - Target,2026-04-07,77,64,280,42,5,80
+26357,Cherry Hill - Target,2026-04-08,51,53,229,49,12,85
+26357,Cherry Hill - Target,2026-04-09,68,85,161,59,23,96
+26357,Cherry Hill - Target,2026-04-10,38,62,123,54,16,89
+26357,Cherry Hill - Target,2026-04-11,85,114,38,75,40,114
+26357,Cherry Hill - Target,2026-04-12,38,38,0,60,21,96
+26357,Cherry Hill - Target,2026-04-13,0,6,0,52,17,91
+26357,Cherry Hill - Target,2026-04-14,0,0,0,60,21,98
+26357,Cherry Hill - Target,2026-04-15,0,1,0,68,28,105
+26357,Cherry Hill - Target,2026-04-16,0,0,0,68,32,105
+26358,Hoboken - Whole Foods,2026-03-18,51,57,154,15,0,55
+26358,Hoboken - Whole Foods,2026-03-19,48,62,106,11,0,49
+26358,Hoboken - Whole Foods,2026-03-20,39,57,67,16,0,54
+26358,Hoboken - Whole Foods,2026-03-21,67,15,0,20,0,57
+26358,Hoboken - Whole Foods,2026-03-24,0,0,0,27,0,66
+26358,Hoboken - Whole Foods,2026-03-25,44,53,216,33,0,70
+26358,Hoboken - Whole Foods,2026-03-26,73,57,143,34,0,69
+26358,Hoboken - Whole Foods,2026-03-27,41,49,102,34,0,66
+26358,Hoboken - Whole Foods,2026-03-28,91,81,11,31,0,68
+26358,Hoboken - Whole Foods,2026-04-01,73,61,120,59,24,94
+26358,Hoboken - Whole Foods,2026-04-02,55,52,65,45,8,83
+26358,Hoboken - Whole Foods,2026-04-03,65,28,0,48,11,84
+26358,Hoboken - Whole Foods,2026-04-04,0,15,0,52,15,90
+26358,Hoboken - Whole Foods,2026-04-05,0,0,0,43,8,78
+26358,Hoboken - Whole Foods,2026-04-07,65,60,177,56,17,95
+26358,Hoboken - Whole Foods,2026-04-08,69,56,108,57,22,94
+26358,Hoboken - Whole Foods,2026-04-09,76,58,32,50,11,87
+26358,Hoboken - Whole Foods,2026-04-10,32,34,0,53,16,92
+26358,Hoboken - Whole Foods,2026-04-14,0,0,0,68,28,104
+26358,Hoboken - Whole Foods,2026-04-15,0,0,0,70,33,108
+26358,Hoboken - Whole Foods,2026-04-16,0,0,0,63,25,98
+26359,Trenton - Costco,2026-03-18,0,1,0,35,0,74
+26359,Trenton - Costco,2026-03-19,0,0,0,26,0,63
+26359,Trenton - Costco,2026-03-20,48,56,221,23,0,59
+26359,Trenton - Costco,2026-03-21,58,75,163,32,0,72
+26359,Trenton - Costco,2026-03-22,61,102,102,39,1,72
+26359,Trenton - Costco,2026-03-27,59,51,89,16,0,50
+26359,Trenton - Costco,2026-03-28,57,74,32,26,0,63
+26359,Trenton - Costco,2026-03-29,32,30,0,21,0,57
+26359,Trenton - Costco,2026-03-30,0,0,0,4,0,42
+26359,Trenton - Costco,2026-03-31,83,73,213,12,0,52
+26359,Trenton - Costco,2026-04-01,33,54,180,17,0,57
+26359,Trenton - Costco,2026-04-02,75,61,105,18,0,53
+26359,Trenton - Costco,2026-04-03,79,59,26,19,0,56
+26359,Trenton - Costco,2026-04-04,26,27,0,29,0,66
+26359,Trenton - Costco,2026-04-05,0,0,0,22,0,59
+26359,Trenton - Costco,2026-04-07,70,59,149,20,0,57
+26359,Trenton - Costco,2026-04-08,54,59,95,27,0,63
+26359,Trenton - Costco,2026-04-09,64,57,31,22,0,61
+26359,Trenton - Costco,2026-04-10,31,20,0,22,0,61
+26359,Trenton - Costco,2026-04-11,0,5,0,30,0,70
+26359,Trenton - Costco,2026-04-13,49,59,146,12,0,52
+26359,Trenton - Costco,2026-04-14,75,72,363,22,0,60
+26359,Trenton - Costco,2026-04-15,40,67,323,26,0,66
+26359,Trenton - Costco,2026-04-16,82,72,241,23,0,60
+26360,Princeton - Wegmans,2026-03-18,62,15,0,35,0,73
+26360,Princeton - Wegmans,2026-03-19,52,60,217,39,2,74
+26360,Princeton - Wegmans,2026-03-20,54,59,163,46,10,83
+26360,Princeton - Wegmans,2026-03-21,62,84,101,53,17,91
+26360,Princeton - Wegmans,2026-03-22,58,72,43,51,12,89
+26360,Princeton - Wegmans,2026-03-23,43,33,0,38,0,76
+26360,Princeton - Wegmans,2026-03-24,44,59,255,52,13,89
+26360,Princeton - Wegmans,2026-03-25,42,56,213,55,19,92
+26360,Princeton - Wegmans,2026-03-26,50,57,163,63,28,101
+26360,Princeton - Wegmans,2026-03-27,41,56,122,60,25,95
+26360,Princeton - Wegmans,2026-03-28,83,103,39,73,35,110
+26360,Princeton - Wegmans,2026-03-29,39,25,0,55,19,92
+26360,Princeton - Wegmans,2026-03-30,73,59,224,53,15,92
+26360,Princeton - Wegmans,2026-03-31,49,59,441,77,40,112
+26360,Princeton - Wegmans,2026-04-01,69,60,372,75,37,110
+26360,Princeton - Wegmans,2026-04-02,71,78,301,78,43,118
+26360,Princeton - Wegmans,2026-04-03,38,50,263,62,27,99
+26360,Princeton - Wegmans,2026-04-04,61,71,455,72,29,108
+26360,Princeton - Wegmans,2026-04-05,85,66,370,59,22,97
+26360,Princeton - Wegmans,2026-04-06,65,78,305,62,27,99
+26360,Princeton - Wegmans,2026-04-07,52,56,516,59,22,95
+26360,Princeton - Wegmans,2026-04-08,54,52,462,53,15,91
+26360,Princeton - Wegmans,2026-04-09,37,46,715,48,10,87
+26360,Princeton - Wegmans,2026-04-10,53,54,662,51,17,87
+26360,Princeton - Wegmans,2026-04-11,59,68,603,55,18,93
+26360,Princeton - Wegmans,2026-04-12,49,70,554,44,8,82
+26360,Princeton - Wegmans,2026-04-13,45,58,509,34,0,70
+26360,Princeton - Wegmans,2026-04-14,51,63,738,55,14,94
+26360,Princeton - Wegmans,2026-04-15,82,64,656,47,10,85
+26360,Princeton - Wegmans,2026-04-16,61,65,595,46,7,83
+26361,Morristown - Acme,2026-03-20,0,1,0,33,0,69
+26361,Morristown - Acme,2026-03-21,0,0,0,27,0,62
+26361,Morristown - Acme,2026-03-22,0,1,0,11,0,48
+26361,Morristown - Acme,2026-03-23,0,0,0,10,0,48
+26361,Morristown - Acme,2026-03-24,55,59,197,26,0,64
+26361,Morristown - Acme,2026-03-31,38,60,313,22,0,61
+26361,Morristown - Acme,2026-04-01,82,57,231,20,0,60
+26361,Morristown - Acme,2026-04-02,50,52,181,25,0,62
+26361,Morristown - Acme,2026-04-03,43,67,138,25,0,60
+26361,Morristown - Acme,2026-04-04,92,104,46,50,12,87
+26361,Morristown - Acme,2026-04-05,46,36,0,43,7,77
+26361,Morristown - Acme,2026-04-06,65,60,221,25,0,60
+26361,Morristown - Acme,2026-04-07,54,57,167,35,0,71
+26361,Morristown - Acme,2026-04-08,46,57,121,39,0,76
+26361,Morristown - Acme,2026-04-09,64,62,57,38,1,77
+26361,Morristown - Acme,2026-04-10,31,63,26,39,0,75
+26361,Morristown - Acme,2026-04-11,26,9,0,49,10,88
+26361,Morristown - Acme,2026-04-12,91,78,172,36,0,73
+26361,Morristown - Acme,2026-04-13,91,78,81,45,6,81
+26361,Morristown - Acme,2026-04-14,66,65,295,39,3,76
+26361,Morristown - Acme,2026-04-15,89,82,206,61,23,99
+26361,Morristown - Acme,2026-04-16,62,66,144,39,5,76
+26362,Atlantic City - BJs,2026-03-18,60,66,3,82,48,114
+26362,Atlantic City - BJs,2026-03-19,41,53,237,81,48,115
+26362,Atlantic City - BJs,2026-03-20,55,59,182,73,39,106
+26362,Atlantic City - BJs,2026-03-21,63,72,119,82,46,115
+26362,Atlantic City - BJs,2026-03-22,61,76,58,73,39,108
+26362,Atlantic City - BJs,2026-03-23,58,19,0,83,50,117
+26362,Atlantic City - BJs,2026-03-24,0,18,0,71,37,104
+26362,Atlantic City - BJs,2026-03-25,71,62,188,66,31,100
+26362,Atlantic City - BJs,2026-03-26,81,57,107,61,25,97
+26362,Atlantic City - BJs,2026-03-27,76,66,31,74,40,109
+26362,Atlantic City - BJs,2026-03-28,31,26,0,70,36,104
+26362,Atlantic City - BJs,2026-03-29,0,4,0,64,29,96
+26362,Atlantic City - BJs,2026-03-30,0,0,0,41,7,76
+26362,Atlantic City - BJs,2026-04-01,57,49,162,34,0,72
+26362,Atlantic City - BJs,2026-04-02,78,56,84,44,11,77
+26362,Atlantic City - BJs,2026-04-03,53,58,31,35,2,70
+26362,Atlantic City - BJs,2026-04-04,59,66,246,38,4,72
+26362,Atlantic City - BJs,2026-04-07,53,56,65,21,0,55
+26362,Atlantic City - BJs,2026-04-08,65,17,0,28,0,63
+26362,Atlantic City - BJs,2026-04-09,45,52,234,29,0,62
+26362,Atlantic City - BJs,2026-04-10,91,83,143,39,3,74
+26362,Atlantic City - BJs,2026-04-11,85,77,58,29,0,63
+26362,Atlantic City - BJs,2026-04-12,79,75,234,25,0,62
+26362,Atlantic City - BJs,2026-04-13,79,59,155,8,0,43
+26362,Atlantic City - BJs,2026-04-14,82,67,370,9,0,41
+26362,Atlantic City - BJs,2026-04-15,42,64,328,7,0,42
+26362,Atlantic City - BJs,2026-04-16,97,99,231,33,0,69
+26363,Clifton - Sam's Club,2026-03-18,0,0,0,0,0,31
+26363,Clifton - Sam's Club,2026-04-01,0,0,0,6,0,41
+26363,Clifton - Sam's Club,2026-04-02,0,0,0,8,0,43
+26363,Clifton - Sam's Club,2026-04-03,0,0,0,13,0,52
+26363,Clifton - Sam's Club,2026-04-04,98,79,129,28,0,65
+26363,Clifton - Sam's Club,2026-04-11,0,1,0,41,5,76
+26363,Clifton - Sam's Club,2026-04-12,100,77,93,26,0,60
+26363,Clifton - Sam's Club,2026-04-13,75,79,18,30,0,70
+26363,Clifton - Sam's Club,2026-04-14,47,69,157,23,0,57
