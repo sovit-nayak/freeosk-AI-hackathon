@@ -96,7 +96,7 @@ kiosk_id,location_name,date,samples_dispensed,yhat_demand,inventory_on_hand
 26357,Cherry Hill - Target,2026-04-13,38,52,4154
 26357,Cherry Hill - Target,2026-04-14,47,54,4107
 26357,Cherry Hill - Target,2026-04-15,45,45,4062
-26357,Cherry Hill - Target,2026-04-16,83,57,3979
+26357,Cherry Hill - Target,2026-04-16,83,55,3979
 26358,Hoboken - Whole Foods,2026-03-22,0,0,0
 26358,Hoboken - Whole Foods,2026-03-23,0,0,0
 26358,Hoboken - Whole Foods,2026-03-24,0,0,0
@@ -132,7 +132,7 @@ kiosk_id,location_name,date,samples_dispensed,yhat_demand,inventory_on_hand
 26359,Trenton - Costco,2026-04-13,54,51,3413
 26359,Trenton - Costco,2026-04-14,80,63,3758
 26359,Trenton - Costco,2026-04-15,88,65,3670
-26359,Trenton - Costco,2026-04-16,47,61,3623
+26359,Trenton - Costco,2026-04-16,47,62,3623
 26360,Princeton - Wegmans,2026-03-31,41,61,253
 26360,Princeton - Wegmans,2026-04-01,91,92,162
 26360,Princeton - Wegmans,2026-04-02,59,63,103
@@ -201,4 +201,4 @@ kiosk_id,location_name,date,samples_dispensed,yhat_demand,inventory_on_hand
 26363,Clifton - Sam's Club,2026-04-13,0,0,0
 26363,Clifton - Sam's Club,2026-04-14,82,69,93
 26363,Clifton - Sam's Club,2026-04-15,49,63,44
-26363,Clifton - Sam's Club,2026-04-16,44,27,0
+26363,Clifton - Sam's Club,2026-04-16,44,25,0

@@ -77,6 +77,44 @@ depletion_df.to_csv("data/kiosk_depletion_forecast.csv", index=False)
 fc_save = df_forecast[["kiosk_id","location_name","date","samples_dispensed","yhat_demand","inventory_on_hand"]].copy()
 fc_save.to_csv("data/kiosk_demand_forecast.csv", index=False)
 
+# ── PROPHET MODEL ───────────────────────────────────────────
+print("\nTraining Prophet model...")
+from prophet import Prophet
+
+prophet_results = []
+for kid, group in df_train.groupby("kiosk_id"):
+    grp = group[["date", "samples_dispensed", "is_promo", "temp_f", "foot_traffic_index"]].copy()
+    grp = grp.rename(columns={"date": "ds", "samples_dispensed": "y"})
+
+    m = Prophet(yearly_seasonality=True, weekly_seasonality=True, daily_seasonality=False)
+    m.add_regressor("is_promo")
+    m.add_regressor("temp_f")
+    m.add_regressor("foot_traffic_index")
+    m.fit(grp[grp["ds"] <= cutoff])
+
+    future = grp[grp["ds"] > cutoff][["ds", "is_promo", "temp_f", "foot_traffic_index"]].copy()
+    if len(future) > 0:
+        pred = m.predict(future)
+        for _, row in pred.iterrows():
+            prophet_results.append({
+                "kiosk_id": kid,
+                "date": row["ds"].strftime("%Y-%m-%d"),
+                "prophet_demand": max(0, int(round(row["yhat"]))),
+                "prophet_lower": max(0, int(round(row["yhat_lower"]))),
+                "prophet_upper": max(0, int(round(row["yhat_upper"]))),
+            })
+
+prophet_df = pd.DataFrame(prophet_results)
+prophet_df.to_csv("data/kiosk_prophet_forecast.csv", index=False)
+print(f"Prophet forecast saved: {len(prophet_df)} rows")
+
+# Merge with XGBoost forecast
+fc_save["date"] = fc_save["date"].astype(str)
+prophet_df["date"] = prophet_df["date"].astype(str)
+merged = fc_save.merge(prophet_df, on=["kiosk_id", "date"], how="left")
+merged.to_csv("data/kiosk_combined_forecast.csv", index=False)
+print("Combined forecast saved to data/kiosk_combined_forecast.csv")
+
 print("\nUploading forecasts to BigQuery...")
 credentials, project = google.auth.default()
 bq = bigquery.Client(credentials=credentials, project=project)
@@ -85,7 +123,7 @@ job_config = bigquery.LoadJobConfig(write_disposition="WRITE_TRUNCATE", autodete
 bq.load_table_from_dataframe(depletion_df, f"{project}.kiosk_data.depletion_forecast", job_config=job_config).result()
 
 fc_up = fc_save.copy()
-fc_up["date"] = fc_up["date"].dt.strftime("%Y-%m-%d")
+fc_up["date"] = fc_up["date"].astype(str)
 bq.load_table_from_dataframe(fc_up, f"{project}.kiosk_data.demand_forecast", job_config=job_config).result()
 
 print("✓ DONE — Model trained, forecasts uploaded!")
