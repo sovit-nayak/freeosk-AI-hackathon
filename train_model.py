@@ -50,25 +50,34 @@ for kid, group in df_forecast.groupby("kiosk_id"):
     group = group.sort_values("date")
     last = group["date"].max()
     avg_demand = int(group["yhat_demand"].mean())
-    last_inv = group.iloc[-1]["inventory_on_hand"]
-    inv = last_inv
-    dep_date = None
-    for d in range(1, 31):
-        future_date = last + timedelta(days=d)
-        inv -= avg_demand
-        if inv <= 0 and dep_date is None:
-            dep_date = future_date
-            inv = 0
-    days = (dep_date - last).days if dep_date else None
+    last_inv = int(group.iloc[-1]["inventory_on_hand"])
+    loc_name = group.iloc[0].get("location_name", "")
+
+    # Project forward: how many days until inventory hits 0?
+    if last_inv <= 0:
+        dep_date = last
+        days = 0
+    elif avg_demand <= 0:
+        dep_date = None
+        days = None
+    else:
+        days_to_zero = last_inv // avg_demand
+        if days_to_zero <= 30:
+            dep_date = last + timedelta(days=days_to_zero)
+            days = days_to_zero
+        else:
+            dep_date = None
+            days = None
+
     depletion_results.append({
         "kiosk_id": kid,
-        "location_name": group.iloc[0].get("location_name", ""),
+        "location_name": loc_name,
         "as_of_date": last.strftime("%Y-%m-%d"),
         "predicted_depletion_date": dep_date.strftime("%Y-%m-%d") if dep_date else "No depletion",
         "days_until_depletion": days,
-        "needs_refill_within_7d": (days <= 7) if days is not None else False,
-        "needs_refill_within_14d": (days <= 14) if days is not None else False,
-        "final_inventory_sim": max(0, int(inv)),
+        "needs_refill_within_7d": (days is not None and days <= 7),
+        "needs_refill_within_14d": (days is not None and days <= 14),
+        "final_inventory_sim": last_inv,
     })
 
 depletion_df = pd.DataFrame(depletion_results)

@@ -110,14 +110,22 @@ with tab1:
     k3.metric("✅ Healthy Kiosks", healthy)
     k4.metric("📦 Avg Remaining Stock", f"{avg_inv:,}")
 
-    if len(n7) > 0:
-        for _, row in n7.iterrows():
-            st.error(f"**CRITICAL:** {row['location_name']} — Depletes **{row['predicted_depletion_date']}** · Remaining: **{int(row['final_inventory_sim'])}** units")
-    if len(n14) > 0:
-        for _, row in n14.iterrows():
-            if row["kiosk_id"] not in n7["kiosk_id"].values:
-                st.warning(f"**WARNING:** {row['location_name']} — Depletes **{row['predicted_depletion_date']}** · Remaining: **{int(row['final_inventory_sim'])}** units")
-    if len(n7) == 0 and len(n14) == 0:
+    # Show depleted kiosks
+    depleted = depletion[(depletion["final_inventory_sim"] <= 0) & (depletion["predicted_depletion_date"] != "No depletion")]
+    for _, row in depleted.iterrows():
+        st.error(f"**DEPLETED:** {row['location_name']} — Ran out on **{row['predicted_depletion_date']}** · Needs immediate restock")
+
+    # Show critical (future depletion within 7 days, still has stock)
+    critical = depletion[(depletion["needs_refill_within_7d"] == True) & (depletion["final_inventory_sim"] > 0)]
+    for _, row in critical.iterrows():
+        st.error(f"**CRITICAL:** {row['location_name']} — Depletes **{row['predicted_depletion_date']}** · Remaining: **{int(row['final_inventory_sim'])}** units")
+
+    # Show warning (future depletion within 14 days, still has stock, not already critical)
+    warning = depletion[(depletion["needs_refill_within_14d"] == True) & (depletion["final_inventory_sim"] > 0) & (depletion["needs_refill_within_7d"] == False)]
+    for _, row in warning.iterrows():
+        st.warning(f"**WARNING:** {row['location_name']} — Depletes **{row['predicted_depletion_date']}** · Remaining: **{int(row['final_inventory_sim'])}** units")
+
+    if len(depleted) == 0 and len(critical) == 0 and len(warning) == 0:
         st.success("All kiosks have sufficient stock. No alerts.")
 
     st.subheader("📋 Fleet Depletion Overview")
@@ -227,12 +235,13 @@ with tab3:
 
     if not kf.empty:
         mae_xgb = abs(kf["samples_dispensed"] - kf["yhat_demand"]).mean()
-        mape_xgb = (abs(kf["samples_dispensed"] - kf["yhat_demand"]) / kf["samples_dispensed"].clip(1)).mean() * 100
+        avg_actual = kf["samples_dispensed"].mean()
+        accuracy_xgb = max(0, (1 - mae_xgb / avg_actual) * 100) if avg_actual > 0 else 0
 
         a1, a2 = st.columns(2)
         with a1:
             st.markdown("#### XGBoost")
-            st.metric("Accuracy", f"{100 - mape_xgb:.1f}%")
+            st.metric("Accuracy", f"{accuracy_xgb:.1f}%")
             st.metric("MAE", f"{mae_xgb:.1f} samples/day")
             direction_xgb = ((kf["yhat_demand"].diff() > 0) == (kf["samples_dispensed"].diff() > 0)).mean() * 100
             st.metric("Direction Accuracy", f"{direction_xgb:.0f}%")
@@ -242,10 +251,11 @@ with tab3:
                 kc_valid = kc.dropna(subset=["prophet_demand"])
                 if not kc_valid.empty:
                     mae_prophet = abs(kc_valid["samples_dispensed"] - kc_valid["prophet_demand"]).mean()
-                    mape_prophet = (abs(kc_valid["samples_dispensed"] - kc_valid["prophet_demand"]) / kc_valid["samples_dispensed"].clip(1)).mean() * 100
+                    avg_actual_p = kc_valid["samples_dispensed"].mean()
+                    accuracy_prophet = max(0, (1 - mae_prophet / avg_actual_p) * 100) if avg_actual_p > 0 else 0
                     direction_prophet = ((kc_valid["prophet_demand"].diff() > 0) == (kc_valid["samples_dispensed"].diff() > 0)).mean() * 100
                     st.markdown("#### Prophet")
-                    st.metric("Accuracy", f"{100 - mape_prophet:.1f}%")
+                    st.metric("Accuracy", f"{accuracy_prophet:.1f}%")
                     st.metric("MAE", f"{mae_prophet:.1f} samples/day")
                     st.metric("Direction Accuracy", f"{direction_prophet:.0f}%")
                 else:

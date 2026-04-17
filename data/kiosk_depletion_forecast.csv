@@ -1,11 +1,11 @@
 kiosk_id,location_name,as_of_date,predicted_depletion_date,days_until_depletion,needs_refill_within_7d,needs_refill_within_14d,final_inventory_sim
-26354,Newark - Walmart,2026-04-16,2026-04-17,1.0,True,True,0
-26355,Edison - ShopRite,2026-04-16,2026-04-29,13.0,False,True,0
-26356,Parsippany - Stop & Shop,2026-04-16,2026-04-24,8.0,False,True,0
-26357,Cherry Hill - Target,2026-04-16,No depletion,,False,False,2089
-26358,Hoboken - Whole Foods,2026-04-15,2026-04-20,5.0,True,True,0
-26359,Trenton - Costco,2026-04-16,No depletion,,False,False,1493
-26360,Princeton - Wegmans,2026-04-11,2026-04-12,1.0,True,True,0
-26361,Morristown - Acme,2026-04-16,No depletion,,False,False,966
-26362,Atlantic City - BJs,2026-04-16,2026-04-17,1.0,True,True,0
-26363,Clifton - Sam's Club,2026-04-16,2026-04-17,1.0,True,True,0
+26354,Newark - Walmart,2026-04-16,2026-04-17,1.0,True,True,59
+26355,Edison - ShopRite,2026-04-16,No depletion,,False,False,19404
+26356,Parsippany - Stop & Shop,2026-04-16,No depletion,,False,False,17547
+26357,Cherry Hill - Target,2026-04-16,No depletion,,False,False,13359
+26358,Hoboken - Whole Foods,2026-04-16,2026-04-22,6.0,True,True,358
+26359,Trenton - Costco,2026-04-16,No depletion,,False,False,17981
+26360,Princeton - Wegmans,2026-04-16,No depletion,,False,False,14399
+26361,Morristown - Acme,2026-04-16,No depletion,,False,False,11128
+26362,Atlantic City - BJs,2026-04-16,No depletion,,False,False,17059
+26363,Clifton - Sam's Club,2026-04-09,2026-04-09,0.0,True,True,0
